@@ -199,53 +199,11 @@ export default function Home() {
 
           <TechStackIcons icons={techIcons} />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              {
-                title: "Mobile Frameworks",
-                skills: skills.mobile,
-                gradient: "from-blue-300/20 to-blue-50/10",
-                accent: "text-blue-600",
-                dot: "bg-blue-500/80",
-                colorProp: "blue"
-              },
-              {
-                title: "Backend & API",
-                skills: skills.backend,
-                gradient: "from-purple-300/20 to-purple-50/10",
-                accent: "text-purple-600",
-                dot: "bg-purple-500/80",
-                colorProp: "purple"
-              },
-              {
-                title: "Database & Services",
-                skills: skills.database,
-                gradient: "from-pink-300/20 to-pink-50/10",
-                accent: "text-pink-600",
-                dot: "bg-pink-500/80",
-                colorProp: "pink"
-              },
-              {
-                title: "DevOps & Tools",
-                skills: skills.devops,
-                gradient: "from-indigo-300/20 to-indigo-50/10",
-                accent: "text-indigo-600",
-                dot: "bg-indigo-500/80",
-                colorProp: "indigo"
-              }
-            ].map((card, idx) => (
-              <div key={idx} className={"rounded-2xl p-[1px] bg-gradient-to-br " + card.gradient}>
-                <div className="bg-white/80 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 h-full border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-xl transform transition-all duration-200 hover:-translate-y-1">
-                  <div className="flex items-center mb-4">
-                    <span className={"w-3 h-3 rounded-full mr-3 " + card.dot} />
-                    <h4 className={"text-lg font-semibold " + card.accent}>{card.title}</h4>
-                  </div>
-
-                  {/* Keep using the existing SkillCard for consistency but wrap it in a modern card UI */}
-                  <SkillCard title={card.title} skills={card.skills} color={card.colorProp} />
-                </div>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <SkillCard title="Mobile Frameworks" skills={skills.mobile} color="blue" />
+            <SkillCard title="Backend & API" skills={skills.backend} color="purple" />
+            <SkillCard title="Database & Services" skills={skills.database} color="pink" />
+            <SkillCard title="DevOps & Tools" skills={skills.devops} color="indigo" />
           </div>
 
           <SkillCard title="Architecture & Best Practices" skills={skills.architecture} color="teal" />
