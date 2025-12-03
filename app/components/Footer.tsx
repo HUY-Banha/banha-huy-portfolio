@@ -13,7 +13,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                    href="tel:+85585299292"
+                    href="tel:+855968666539"
                     className="px-6 py-3 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-full font-medium hover:shadow-lg transition-all hover:scale-105 inline-flex items-center gap-2"
                 >
                     <span className="text-xl">📞</span>
@@ -21,7 +21,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                    href="https://t.me/banhahuy"
+                    href="https://t.me/huybanha"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-6 py-3 bg-gradient-to-r from-sky-600 to-blue-600 text-white rounded-full font-medium hover:shadow-lg transition-all hover:scale-105 inline-flex items-center gap-2"
