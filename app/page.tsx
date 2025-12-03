@@ -200,10 +200,16 @@ export default function Home() {
           <TechStackIcons icons={techIcons} />
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <SkillCard title="Mobile Frameworks" skills={skills.mobile} color="blue" />
-            <SkillCard title="Backend & API" skills={skills.backend} color="purple" />
-            <SkillCard title="Database & Services" skills={skills.database} color="pink" />
-            <SkillCard title="DevOps & Tools" skills={skills.devops} color="indigo" />
+            {[
+              { title: "Mobile Frameworks", skills: skills.mobile, color: "blue" as const },
+              { title: "Backend & API", skills: skills.backend, color: "purple" as const },
+              { title: "Database & Services", skills: skills.database, color: "pink" as const },
+              { title: "DevOps & Tools", skills: skills.devops, color: "indigo" as const }
+            ].map((card, idx) => (
+              <div key={idx} className="group">
+                <SkillCard title={card.title} skills={card.skills} color={card.color} />
+              </div>
+            ))}
           </div>
 
           <SkillCard title="Architecture & Best Practices" skills={skills.architecture} color="teal" />
