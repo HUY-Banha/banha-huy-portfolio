@@ -41,8 +41,8 @@ export default function Footer() {
                 </a>
 
                 <a
-                    href="/assets/Banha%20Huy%20-%20Mobile%20Applicaiton%20Update%20april%20(1).pdf"
-                    download="Banha_Huy_CV_April_2024.pdf"
+                    href="/assets/banha-huy-cv.pdf"
+                    download="banha-huy-cv.pdf"
                     className="px-6 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-full font-medium hover:border-blue-600 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 transition-all inline-flex items-center gap-2"
                 >
                     <span className="text-xl">📄</span>
