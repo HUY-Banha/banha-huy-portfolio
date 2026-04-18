@@ -49,15 +49,31 @@ export default function Home() {
 
   const experiences = [
     {
+      title: "Mobile Front End Developer",
+      company: "Wing Bank",
+      period: "November 2025 - Present",
+      achievements: [
+        "Develop high-performance mobile applications including API integration and effective state management.",
+        "Ensure code quality through unit testing, rigorous code reviews, and adherence to best development practices.",
+        "Analyze crash reports, monitor production stability, and perform root cause analysis to implement long-term fixes.",
+        "Collaborate closely with UI/UX designers, backend developers, QA teams, and product owners to deliver user-centered and well-integrated solutions.",
+        "Manage and mentor junior developers and interns, while managing timelines, resources, and deliverables to ensure high-quality releases.",
+        "Manage the full mobile release lifecycle, including version control, App Store and Play Store deployments, and researching emerging technologies to improve scalability, maintainability, and user experience.",
+        "Applying mobile security principles such as biometric authentication, secure data storage, cryptography RSA, AES and Hashing for data protection, and encryption, and exploring emerging technologies to improve scalability and maintainability."
+      ]
+    },
+    {
       title: "Application Support Officer",
       company: "Wing Bank",
-      period: "August 2025 - Present",
+      period: "August 2025 - November 2025",
       achievements: [
-        "Oversee user-reported technical issues, providing front-line support and ensuring timely, effective resolution, including escalation management for critical cases",
-        "Perform root cause analysis on recurring issues and implement long-term corrective actions to prevent future incidents",
-        "Maintain clear communication with users, stakeholders, and IT teams regarding system changes, ongoing issues, and resolution progress",
-        "Collaborate closely with development, QA, network, and infrastructure teams to ensure smooth application support and system stability",
-        "Coordinate with third-party vendors to manage external application support and ensure compliance with service level agreements (SLAs)"
+        "Provide front-line support, resolve user issues, and manage escalations for critical cases.",
+        "Perform root cause analysis and implement long-term fixes to prevent recurring incidents.",
+        "Liaise between users, stakeholders, and IT teams on system changes and issue resolution.",
+        "Collaborate with development, QA, and infrastructure teams to ensure application stability.",
+        "Coordinate with third-party vendors and ensure SLA compliance.",
+        "Track and facilitate issue resolution between development and end users.",
+        "Gather and analyze data to support BRD and BCD documentation for business analysts."
       ]
     },
     {
